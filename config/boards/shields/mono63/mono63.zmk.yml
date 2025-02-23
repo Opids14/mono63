@@ -1,0 +1,8 @@
+file_format: "1"
+id: mono63
+name: mono63
+type: shield
+url: https://github.com/Opids14/zmk-config-mono63
+requires: [pro_micro]
+features:
+  - keys
