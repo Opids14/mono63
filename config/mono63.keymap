@@ -41,14 +41,14 @@
         any: any {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(A) &kp LS(N) &kp LS(Y) &kp LS(O) &kp LS(N) &kp LS(E) &kp LS(A) &kp LS(N) &kp LS(Y) &kp LS(O) &kp LS(N) &kp LS(E) &kp SPACE &kp MINUS>;
+            bindings = <&kp LS(A) &kp LS(N) &kp LS(Y) &kp LS(O) &kp LS(N) &kp LS(E) &kp SPACE &kp MINUS>;
             label = "ANY";
         };
 
         ASAP: ASAP {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(A) &kp LS(S) &kp LS(A) &kp LS(P) &kp LS(A) &kp LS(S) &kp LS(A) &kp LS(P) &kp SPACE &kp MINUS>;
+            bindings = <&kp LS(A) &kp LS(S) &kp LS(A) &kp LS(P) &kp SPACE &kp MINUS>;
             label = "ASAP";
         };
     };
