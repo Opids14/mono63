@@ -96,7 +96,7 @@
 &kp F1     &kp F2     &kp F3    &kp F4     &kp F5    &kp F6                                               &kp F7             &kp F8           &kp F9     &kp F10  &kp F11   &kp F12
 &kp LC(C)  &kp LC(V)  &kp UP    &kp PLUS   &Em       &WR                                                  &kp MINUS          &kp EQUAL        &kp I      &kp O    &kp P     &kp BSPC
 &trans     &kp LEFT   &kp DOWN  &kp RIGHT  &any      &kp PIPE   &kp C_PREV  &kp UP            &kp C_NEXT  &kp CAPSLOCK       &kp J            &kp K      &kp L    &kp SEMI  &kp SQT
-&trans     &trans     &trans    &trans     &ASAP     &kp SLASH  &kp LEFT    &kp C_PLAY_PAUSE  &kp RIGHT   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp COMMA  &kp DOT  &kp FSLH  &kp LSHFT
+&trans     &trans     &trans    &trans     &ASAP     &kp SLASH  &kp LEFT    &kp C_PLAY_PAUSE  &kp RIGHT   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp COMMA  &kp DOT  &kp FSLH  &trans
                                 &kp LGUI   &kp LALT  &mo 1      &kp SPACE   &kp DOWN          &kp ENTER   &mo 2              &kp PSCRN        &kp DEL
             >;
         };
@@ -115,7 +115,7 @@
 &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_NXT                                   &bt BT_CLR    &bt BT_CLR_ALL  &kp N8        &kp N9                &studio_unlock         &bootloader
 &kp TILDE     &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT                                  &kp CARET     &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSPC
 &trans        &trans           &trans        &trans        &kp F         &kp G        &kp LBKT   &kp UP    &kp RBKT   &kp H         &kp J           &kp K         &kp L                 &kp SEMI               &kp SQT
-&kp LCTRL     &kp Z            &kp X         &kp C         &kp V         &kp B        &kp LEFT   &trans    &kp RIGHT  &kp C_VOL_DN  &kp C_VOL_UP    &kp COMMA     &kp DOT               &kp FSLH               &kp LSHFT
+&kp LCTRL     &kp Z            &kp X         &kp C         &kp V         &kp B        &kp LEFT   &trans    &kp RIGHT  &kp C_VOL_DN  &kp C_VOL_UP    &kp COMMA     &kp DOT               &kp FSLH               &trans
                                              &kp LGUI      &kp LALT      &mo 1        &kp SPACE  &kp DOWN  &kp ENTER  &mo 2         &kp PSCRN       &kp DEL
             >;
         };
@@ -133,7 +133,7 @@
             bindings = <
 &kp ESC    &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                  &kp N6  &kp N7     &kp N8     &kp N9   &kp N0    &kp GRAVE
 &kp TAB    &kp Q   &kp W   &kp E     &kp R     &kp T                                   &kp Y   &kp U      &kp I      &kp O    &kp P     &kp BSPC
-&kp LSHFT  &kp A   &kp S   &kp D     &kp F     &kp G   &kp LBKT   &kp UP    &kp RBKT   &kp H   &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&trans     &kp A   &kp S   &kp D     &kp F     &kp G   &kp LBKT   &kp UP    &kp RBKT   &kp H   &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LCTRL  &kp Z   &kp X   &kp C     &kp V     &kp B   &kp LEFT   &kp LBKT  &kp RIGHT  &kp N   &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp LSHFT
                            &kp LGUI  &kp LALT  &mo 1   &kp SPACE  &kp DOWN  &kp ENTER  &mo 2   &kp PSCRN  &kp DEL
             >;
