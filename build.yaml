@@ -15,7 +15,3 @@
 include:
   - board: nice_nano_v2
     shield: mono63 nice_view_adapter nice_view
-cmake-args:
-      - DCONFIG_ZMK_KEYBOARD_NAME=\"Ergo 63 Keeb\"
-board: nice_nano_v2
-    shield: settings_reset
