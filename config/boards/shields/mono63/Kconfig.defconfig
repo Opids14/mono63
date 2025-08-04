@@ -1,6 +1,6 @@
 if SHIELD_MONO63
 
 config ZMK_KEYBOARD_NAME
-    default "Ergo63Ralph"
+    default "Ergo 63"
 
 endif
