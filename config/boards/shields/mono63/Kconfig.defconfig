@@ -1,6 +1,6 @@
-if SHIELD_MONO63
+if SHIELD_MONO18
 
 config ZMK_KEYBOARD_NAME
-    default "Ergo 63"
+    default "macropad"
 
 endif

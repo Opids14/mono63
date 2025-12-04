@@ -1,0 +1,8 @@
+file_format: "1"
+id: mono18
+name: mono18
+type: shield
+url: https://github.com/Opids14/Macro
+requires: [pro_micro]
+features:
+  - keys
