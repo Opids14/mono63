@@ -7,7 +7,7 @@
 # board: [ "nice_nano@2.0.0" ]
 # shield: [ "corne_left", "corne_right" ]
 # include:
-#   - board: bdn9_rev2
+#   - board: bdn9
 #   - board: nice_nano@2.0.0
 #     shield: reviung41
 #
