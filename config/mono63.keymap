@@ -34,7 +34,7 @@
         WR: WR {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LC(RIGHT))>;
+            bindings = <&kp LS(W) &kp LS(A) &kp LS(R) &kp LS(R) &kp LS(A) &kp LS(N) &kp LS(T) &kp LS(Y) &kp SPACE &kp MINUS &kp SPACE>;
             label = "WR";
         };
 
