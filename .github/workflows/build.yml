@@ -1,5 +1,56 @@
-on: [push, pull_request, workflow_dispatch]
+name: Build ZMK Firmware (v0.3.0 stable)
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "config/**"
+      - "boards/**"
+      - ".github/workflows/**"
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ----------------------------
+      # TOOLCHAIN PINNING (CRITICAL)
+      # ----------------------------
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install compatible West (IMPORTANT)
+        run: |
+          python -m pip install --upgrade pip
+          pip install west==1.1.0
+
+      # ----------------------------
+      # CLEAN WORKSPACE (prevents Zephyr mismatch)
+      # ----------------------------
+      - name: Hard reset workspace
+        run: |
+          rm -rf .west
+          rm -rf zephyr
+          rm -rf modules
+          rm -rf build
+
+      # ----------------------------
+      # INIT ZMK (v0.3.0 pinned via west.yml)
+      # ----------------------------
+      - name: West init
+        run: |
+          west init -l config
+          west update --fetch-opt=--depth=1
+          west zephyr-export
+
+      # ----------------------------
+      # BUILD
+      # ----------------------------
+      - name: Build firmware
+        run: |
+          west build -p always -b nice_nano_v2 config
