@@ -27,6 +27,7 @@
             label = "LS_TEST";
             #binding-cells = <0>;
             bindings = <&mt LEFT_SHIFT CAPS>;
+            tapping-term-ms = <100>;
         };
     };
 
